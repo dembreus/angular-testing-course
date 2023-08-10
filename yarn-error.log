@@ -1,0 +1,93 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\dillon.embreus\AppData\Local\node\corepack\yarn\1.22.19\bin\yarn.js
+
+PATH: 
+  C:\Program Files\PowerShell\7;C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.17.11461.0_x64__8wekyb3d8bbwe;C:\Program Files\Zulu\zulu-17\bin\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\dotnet\;C:\ProgramData\chocolatey\bin;C:\Program Files\Perforce\;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files (x86)\Yarn\bin\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Microsoft VS Code\bin;C:\Program Files (x86)\Microsoft SQL Server\160\DTS\Binn\;C:\Program Files\Azure Data Studio\bin;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Users\dillon.embreus\AppData\Local\Microsoft\WindowsApps;C:\ProgramData\nvm;C:\Users\dillon.embreus\.dotnet\tools;C:\Users\dillon.embreus\AppData\Local\Programs\Fiddler;C:\Users\dillon.embreus\AppData\Local\Yarn\bin;C:\Users\dillon.embreus\AppData\Local\Microsoft\WindowsApps;C:\Users\dillon.embreus\AppData\Local\GitHubDesktop\bin;C:\ProgramData\nvm;C:\Program Files\nodejs;C:\Program Files\Azure Data Studio\bin;C:\Users\dillon.embreus\.dotnet\tools
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.18.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: connect ETIMEDOUT 216.145.127.24:80
+      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1278:16)
+
+npm manifest: 
+  {
+    "name": "angular-testing-course",
+    "version": "0.0.0",
+    "license": "MIT",
+    "scripts": {
+      "ng": "ng",
+      "start": "ng serve  --proxy-config ./proxy.json",
+      "server": "ts-node -P ./server/server.tsconfig.json ./server/server.ts",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "cypress:open": "cypress open",
+      "cypress:run": "cypress run",
+      "build:prod": "ng build --prod",
+      "start:prod": "http-server ./dist -a localhost -p 4200",
+      "build-and-start:prod": "run-s build:prod start:prod",
+      "e2e": "start-server-and-test build-and-start:prod http://localhost:4200 cypress:run"
+    },
+    "private": true,
+    "dependencies": {
+      "@angular/animations": "16.0.0",
+      "@angular/cdk": "^16.0.0",
+      "@angular/common": "16.0.0",
+      "@angular/compiler": "16.0.0",
+      "@angular/core": "16.0.0",
+      "@angular/forms": "16.0.0",
+      "@angular/material": "^16.0.0",
+      "@angular/material-moment-adapter": "16.0.0",
+      "@angular/platform-browser": "16.0.0",
+      "@angular/platform-browser-dynamic": "16.0.0",
+      "@angular/router": "16.0.0",
+      "body-parser": "^1.18.3",
+      "core-js": "^3.19.0",
+      "cors": "^2.8.5",
+      "cypress": "^9.1.1",
+      "express": "^4.16.2",
+      "http-server": "^14.0.0",
+      "moment": "^2.22.2",
+      "npm-run-all": "^4.1.5",
+      "rxjs": "6.5.4",
+      "tslib": "^2.0.0",
+      "zone.js": "~0.13.0"
+    },
+    "devDependencies": {
+      "@angular-devkit/build-angular": "^16.0.0",
+      "@angular/cli": "^16.0.0",
+      "@angular/compiler-cli": "16.0.0",
+      "@angular/language-service": "16.0.0",
+      "@cypress/webpack-preprocessor": "^4.0.3",
+      "@types/express": "^4.0.39",
+      "@types/jasmine": "~4.3.0",
+      "@types/jasminewd2": "~2.0.2",
+      "@types/node": "^12.11.1",
+      "jasmine-core": "~4.5.0",
+      "jasmine-spec-reporter": "~5.0.0",
+      "karma": "~6.4.0",
+      "karma-chrome-launcher": "~3.1.0",
+      "karma-cli": "~1.0.1",
+      "karma-coverage": "~2.2.0",
+      "karma-coverage-istanbul-reporter": "~3.0.2",
+      "karma-jasmine": "~5.1.0",
+      "karma-jasmine-html-reporter": "~2.0.0",
+      "start-server-and-test": "^1.9.1",
+      "ts-node": "~3.2.0",
+      "typescript": "~5.0.4"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
